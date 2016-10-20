@@ -40,3 +40,9 @@ localhost:8000/hands_evaluator/deals/start
 
 localhost:8000/hands_evaluator/deals/start
 
+
+## Things to-do:
+- Add tests
+- Clean code
+- Refactor models and add convenience methods
+- Protect model's properties
