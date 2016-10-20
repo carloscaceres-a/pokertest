@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+
+    <body>
+        {% for hand in ranked_hands %}
+            <p>
+            <b>{{hand}}</b><br>
+            Cards in this hand<br>
+            {% for card in hand.cards %}
+                {{card}}<br>
+            {% endfor %}
+            </p>
+            <p>
+            Combinations in this hand<br>
+            {% for combination in hand.combinations %}
+                {{combination}}<br>
+            {% endfor %}
+        {% endfor %}
+
+        <br><br>
+        <a href="/hands_evaluator/deals/next/">Next hands</a>
+    </body>
+
+</html>
