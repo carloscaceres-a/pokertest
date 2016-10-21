@@ -46,3 +46,4 @@ localhost:8000/hands_evaluator/deals/start
 - Clean code
 - Refactor models and add convenience methods
 - Protect model's properties
+- DRY

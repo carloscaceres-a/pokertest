@@ -1,8 +1,6 @@
 from apps.hands_evaluator.services.dealer_service import DealerService
 from apps.hands_evaluator.services.hand_ranker import HandRanker
 from apps.hands_evaluator.models.hand import Hand
-# from apps.hands_evaluator.models.combination import Combination
-# from apps.hands_evaluator.exceptions import DealerServiceError
 from django.apps import apps as django_apps
 
 

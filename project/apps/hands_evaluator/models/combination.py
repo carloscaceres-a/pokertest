@@ -36,11 +36,11 @@ class Combination(object):
             return '{} {}'.format(self.weight, self.name)
 
     def __cmp__(self, other):
-        print('called!')
         t1 = self.weight, self.value
         t2 = other.weight, other.value
         return cmp(t1, t2)
 
+    # TODO: DRY
     def __gt__(self, other):
         if self.weight > other.weight:
             return True
@@ -50,6 +50,7 @@ class Combination(object):
 
         return False
 
+    # TODO: DRY
     def __lt__(self, other):
         if self.weight < other.weight:
             return True

@@ -42,6 +42,7 @@ class Hand(object):
             if status_value == self.status:
                 return '{}'.format(status_name)
 
+    # TODO: DRY
     def __gt__(self, other):
         self_sorted_combinations = sorted(self.combinations, reverse=True)
         other_sorted_combinations = sorted(other.combinations, reverse=True)
@@ -55,6 +56,7 @@ class Hand(object):
 
         return False
 
+    # TODO: DRY
     def __lt__(self, other):
         self_sorted_combinations = sorted(self.combinations, reverse=True)
         other_sorted_combinations = sorted(other.combinations, reverse=True)
